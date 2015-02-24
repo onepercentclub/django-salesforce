@@ -30,5 +30,5 @@ def ssl_wrap_socket(sock, key_file, cert_file, disable_validation, ca_certs):
                                cert_reqs=cert_reqs, ca_certs=ca_certs, ssl_version=ssl.PROTOCOL_SSLv23)
 	return sock
 
-httplib2._ssl_wrap_socket = ssl_wrap_socket
+#httplib2._ssl_wrap_socket = ssl_wrap_socket
 
