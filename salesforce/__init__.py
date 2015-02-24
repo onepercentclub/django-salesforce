@@ -12,6 +12,9 @@ Allows access to all Salesforce objects accessible via the SOQL API.
 """
 
 import httplib2, ssl
+import logging
+
+log = logging.getLogger(__name__)
 
 def ssl_wrap_socket(sock, key_file, cert_file, disable_validation, ca_certs):
 	if disable_validation:
